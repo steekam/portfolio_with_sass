@@ -1,5 +1,5 @@
-$primary-color: #333;
-$secondary-color: #eece1a;
+$primary-color: #444;
+$secondary-color: #35d4e9;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -28,6 +28,11 @@ $background-opacity: 0.9;
             }
         }
     }
+}
+
+// Set text color
+@function set-text-color($color) {
+    @return if((lightness($color) > 40), #000, #fff);
 }
 
 // Media Query Mixins
