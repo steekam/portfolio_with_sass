@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://steekam.github.io/portfolio_with_sass",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,8 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
